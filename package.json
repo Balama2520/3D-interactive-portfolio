@@ -1,0 +1,39 @@
+{
+  "name": "bala-maneesh-portfolio",
+  "version": "2.0.0",
+  "description": "3D Interactive Portfolio - Bala Maneesh Ayanala | Software Engineer, AI/ML Engineer, Data Analyst",
+  "author": "Bala Maneesh Ayanala <abalamaneesh@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "keywords": [
+    "portfolio",
+    "3d-portfolio",
+    "threejs",
+    "software-engineer",
+    "ai-ml-engineer",
+    "data-analyst",
+    "react",
+    "nodejs",
+    "tensorflow",
+    "aws"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balamaneesh/portfolio-3d"
+  },
+  "homepage": "https://abms-portfolio.netlify.app/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port $PORT",
+    "start": "vite --port $PORT"
+  },
+  "devDependencies": {
+    "@ashthornton/asscroll": "^2.0.11",
+    "events": "^3.3.0",
+    "gsap": "^3.11.4",
+    "three": "^0.148.0",
+    "vite": "^4.0.0"
+  }
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/Z.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bala Maneesh Ayanala - Software Engineer, AI/ML Engineer, and Data Analyst specializing in Python, React, TensorFlow, and AWS" />
+    <meta name="keywords" content="Software Engineer, AI/ML, Data Analyst, Python, React, TensorFlow, AWS, Machine Learning" />
+    <meta name="author" content="Bala Maneesh Ayanala" />
+    <title>Bala Maneesh Ayanala | AI/ML Engineer & Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body class="light-theme">
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+    <div id="particles-js"></div>
+    <div class="scroll-progress-bar"></div>
+
+    <div class="music-player">
+      <button class="music-toggle" id="musicToggle">
+        <i class="fas fa-music"></i>
+      </button>
+      <div class="music-controls" id="musicControls">
+        <span class="music-title">Background Music</span>
+        <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="30">
+        <span class="volume-label"><i class="fas fa-volume-up"></i></span>
+      </div>
+     <audio id="bgMusic" loop preload="auto">
+        <source src="./assets/bg-music.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="social-sidebar">
+      <a href="https://www.linkedin.com/in/bala-maneesh-ayanala-702582266/" target="_blank" class="social-link" data-tooltip="Linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:abalamaneesh@gmail.com" class="social-link" data-tooltip="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="tel:+918096275914" class="social-link" data-tooltip="Phone">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="https://drive.google.com/drive/folders/1CX9PU4vnq1FGVsD8JFLWKm3zjCLHdjfQ?usp=sharing" target="_blank" class="social-link" data-tooltip="Projects">
+        <i class="fas fa-folder"></i>
+      </a>
+      <a href="https://drive.google.com/drive/folders/13xVg-bILyOJpm0x3dOn6e1pCb4UAqklR?usp=sharing" target="_blank" class="social-link" data-tooltip="Certificates">
+        <i class="fas fa-certificate"></i>
+      </a>
+    </div>
+
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="experience">
+      <canvas class="experience-canvas"></canvas>
+    </div>
+
+    <div class="preloader">
+      <div class="preloader-wrapper">
+        <div class="loading">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        <p class="loading-text">Loading Amazing Experience...</p>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">
+      <i class="fas fa-check-circle"></i>
+      <span class="toast-message">Action completed!</span>
+    </div>
+
+    <div class="page" asscroll-container>
+      <div class="toggle-bar">
+        <div class="sun-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" class="svg-toggle">
+            <path fill="currentColor" d="M11 5V1h2v4Zm6.65 2.75-1.375-1.375 2.8-2.875 1.4 1.425ZM19 13v-2h4v2Zm-8 10v-4h2v4ZM6.35 7.7 3.5 4.925l1.425-1.4L7.75 6.35Zm12.7 12.8-2.775-2.875 1.35-1.35 2.85 2.75ZM1 13v-2h4v2Zm3.925 7.5-1.4-1.425 2.8-2.8.725.675.725.7ZM12 18q-2.5 0-4.25-1.75T6 12q0-2.5 1.75-4.25T12 6q2.5 0 4.25 1.75T18 12q0 2.5-1.75 4.25T12 18Zm0-2q1.65 0 2.825-1.175Q16 13.65 16 12q0-1.65-1.175-2.825Q13.65 8 12 8q-1.65 0-2.825 1.175Q8 10.35 8 12q0 1.65 1.175 2.825Q10.35 16 12 16Zm0-4Z" />
+          </svg>
+        </div>
+        <button class="toggle-button">
+          <div class="toggle-circle"></div>
+        </button>
+        <div class="moon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" class="svg-toggle">
+            <path fill="currentColor" d="M12 21q-3.75 0-6.375-2.625T3 12q0-3.75 2.625-6.375T12 3q.35 0 .688.025.337.025.662.075-1.025.725-1.637 1.887Q11.1 6.15 11.1 7.5q0 2.25 1.575 3.825Q14.25 12.9 16.5 12.9q1.375 0 2.525-.613 1.15-.612 1.875-1.637.05.325.075.662Q21 11.65 21 12q0 3.75-2.625 6.375T12 21Zm0-2q2.2 0 3.95-1.212 1.75-1.213 2.55-3.163-.5.125-1 .2-.5.075-1 .075-3.075 0-5.238-2.162Q9.1 10.575 9.1 7.5q0-.5.075-1t.2-1q-1.95.8-3.162 2.55Q5 9.8 5 12q0 2.9 2.05 4.95Q9.1 19 12 19Zm-.25-6.75Z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="page-wrapper">
+        <section class="hero">
+          <div class="hero-wrapper">
+            <div class="intro-second text-flex">
+              <p class="typewriter">Hi,I'm Bala Maneesh Ayanala</p>
+            </div>
+            <div class="intro-text text-flex">
+              Welcome to My World of Innovation
+            </div>
+            <div class="arrow-svg-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                <path fill="currentColor" d="M12 14.95q-.2 0-.375-.063-.175-.062-.325-.212L6.675 10.05q-.275-.275-.262-.688.012-.412.287-.687.275-.275.7-.275.425 0 .7.275l3.9 3.9 3.925-3.925q.275-.275.688-.263.412.013.687.288.275.275.275.7 0 .425-.275.7l-4.6 4.6q-.15.15-.325.212-.175.063-.375.063Z" />
+              </svg>
+            </div>
+            <div class="hero-main">
+              <h1 class="hero-main-title text-flex">Bala Maneesh Ayanala</h1>
+              <p class="hero-main-description text-flex">
+                <span class="role-text"></span>
+              </p>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number" data-count="4">0</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-count="1">0</span>
+                  <span class="stat-label">Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-count="8">0</span>
+                  <span class="stat-label">Certifications</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="first-move section-margin"></div>
+
+        <section class="first-section section left">
+          <div class="progress-wrapper progress-bar-wrapper-left">
+            <div class="progress-bar"></div>
+          </div>
+          <div class="section-intro-wrapper">
+            <h1 class="section-title">
+              <span class="section-title-text">Featured Projects</span>
+              <div class="section-title-decoration styleOne"></div>
+              <div class="section-title-decoration styleTwo"></div>
+              <div class="section-title-decoration styleThree"></div>
+            </h1>
+            <span class="section-number">01</span>
+          </div>
+
+          <div class="section-detail-wrapper">
+            <div class="project-card" data-tilt>
+              <div class="project-icon">
+                <i class="fas fa-satellite"></i>
+              </div>
+              <h3 class="project-title">SAR Target Detection Engine</h3>
+              <p class="project-description">
+                AI-powered detection system combining YOLOv8 and Denoising Autoencoders for Synthetic Aperture Radar imagery. Achieved significant accuracy improvements while reducing inference time through optimized pipeline architecture.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">YOLOv8</span>
+                <span class="tech-tag">AWS</span>
+              </div>
+              <div class="project-metrics">
+                <div class="metric">
+                  <i class="fas fa-chart-line"></i>
+                  <span>↑ Detection Accuracy</span>
+                </div>
+                <div class="metric">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span>↓ Inference Time</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-tilt>
+              <div class="project-icon">
+                <i class="fas fa-image"></i>
+              </div>
+              <h3 class="project-title">Satellite Image Denoising Suite</h3>
+              <p class="project-description">
+                Multi-stage denoising pipeline combining classical algorithms (NLM, Gaussian, Bilateral, FFT) with deep learning models to enhance satellite imagery quality for downstream analytics and computer vision applications.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Signal Processing</span>
+              </div>
+              <div class="project-metrics">
+                <div class="metric">
+                  <i class="fas fa-magic"></i>
+                  <span>Image Enhancement</span>
+                </div>
+                <div class="metric">
+                  <i class="fas fa-brain"></i>
+                  <span>Deep Learning</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-tilt>
+              <div class="project-icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h3 class="project-title">Full-Stack Automation Dashboard</h3>
+              <p class="project-description">
+                Production-grade monitoring dashboard engineered during IBM internship. Features responsive React frontend, Node.js/Express backend, MongoDB database. Containerized with Docker and deployed on AWS for scalable automation workflows.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-metrics">
+                <div class="metric">
+                  <i class="fas fa-building"></i>
+                  <span>IBM Project</span>
+                </div>
+                <div class="metric">
+                  <i class="fas fa-rocket"></i>
+                  <span>Production Ready</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-tilt>
+              <div class="project-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <h3 class="project-title">Agriculture Intelligence Platform</h3>
+              <p class="project-description">
+                ML-powered agricultural decision support system providing intelligent fertilizer and pesticide recommendations based on weather patterns and crop conditions. Integrates computer vision for automated plant disease detection from field images.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">ML</span>
+                <span class="tech-tag">Python</span>
+              </div>
+              <div class="project-metrics">
+                <div class="metric">
+                  <i class="fas fa-leaf"></i>
+                  <span>Smart Agriculture</span>
+                </div>
+                <div class="metric">
+                  <i class="fas fa-code-branch"></i>
+                  <span>In Development</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="second-move section-margin"></div>
+
+        <section class="second-section section right">
+          <div class="progress-wrapper progress-bar-wrapper-right">
+            <div class="progress-bar blue-background"></div>
+          </div>
+          <div class="section-intro-wrapper blue-text blue-border">
+            <h1 class="section-title blue-text blue-border">
+              <span class="section-title-text blue-text">Skills & Experience</span>
+              <div class="section-title-decoration styleOne blue-border"></div>
+              <div class="section-title-decoration styleTwo blue-border"></div>
+              <div class="section-title-decoration styleThree blue-background blue-border"></div>
+            </h1>
+            <span class="section-number blue-text">02</span>
+          </div>
+
+          <div class="section-detail-wrapper blue-border">
+            <h3 class="section-heading">About Me</h3>
+            <p class="section-text">
+              B.Tech ECE graduate from SRMIST with hands-on experience in software engineering, machine learning, computer vision, and data analytics. I've contributed to real-world projects at IBM Innovation Centre and SRMIST's research labs. Passionate about building intelligent, data-driven solutions that solve complex problems and create measurable impact.
+            </p>
+
+            <h3 class="section-heading">Technical Expertise</h3>
+            
+            <div class="skill-category">
+              <h4 class="skill-category-title"><i class="fas fa-code"></i> Programming & Development</h4>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Python</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>JavaScript / React</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Node.js / Express</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4 class="skill-category-title"><i class="fas fa-brain"></i> AI/ML & Data Science</h4>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>TensorFlow / PyTorch</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Computer Vision (OpenCV, YOLOv8)</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Data Analytics (Pandas, SQL, Power BI)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4 class="skill-category-title"><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>AWS (EC2, S3, Lambda)</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Docker & CI/CD</span>
+                  <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="section-heading">Professional Experience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">Front-End Web Development Intern</h4>
+                  <p class="timeline-company"><i class="fas fa-building"></i> IBM Innovation Centre (Remote)</p>
+                  <p class="timeline-date"><i class="far fa-calendar"></i> Aug 2025 – Oct 2025</p>
+                  <p class="timeline-description">
+                    Built responsive React UIs with modern CSS, integrated RESTful APIs, debugged frontend/backend issues, and collaborated in Agile/Scrum environments for production feature development and testing.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">Research Assistant – AI/ML & Signal Processing</h4>
+                  <p class="timeline-company"><i class="fas fa-university"></i> SRMIST, Chennai</p>
+                  <p class="timeline-date"><i class="far fa-calendar"></i> Jan 2025 – Jun 2025</p>
+                  <p class="timeline-description">
+                    Prepared and cleaned radar/SAR datasets, trained deep learning models (YOLOv8) for target detection and classification, implemented signal processing and computer vision pipelines, and documented research findings for technical reports.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="section-heading">Education</h3>
+            <div class="education-card">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-content">
+                <h4>B.Tech in Electronics and Communication Engineering</h4>
+                <p>SRM Institute of Science and Technology, Chennai</p>
+                <p>Sep 2021 – Jun 2025</p>
+              </div>
+            </div>
+
+            <h3 class="section-heading">Certifications & Achievements</h3>
+            <div class="cert-grid">
+              <div class="cert-badge"><i class="fab fa-aws"></i> AWS Cloud Practitioner</div>
+              <div class="cert-badge"><i class="fab fa-google"></i> Google Data Analytics</div>
+              <div class="cert-badge"><i class="fab fa-ibm"></i> IBM Web Developer</div>
+              <div class="cert-badge"><i class="fas fa-robot"></i> Databricks AI</div>
+              <div class="cert-badge"><i class="fab fa-python"></i> Python Programming</div>
+              <div class="cert-badge"><i class="fas fa-shield-alt"></i> Cybersecurity</div>
+              <div class="cert-badge"><i class="fas fa-trophy"></i> Smart India Hackathon 2025</div>
+              <div class="cert-badge"><i class="fas fa-users"></i> DSA Club Community Head</div>
+            </div>
+          </div>
+        </section>
+
+        <div class="third-move section-margin"></div>
+
+        <section class="third-section section left">
+          <div class="progress-wrapper progress-bar-wrapper-left">
+            <div class="progress-bar green-background"></div>
+          </div>
+          <div class="section-intro-wrapper green-text green-border">
+            <h1 class="section-title green-text green-border">
+              <span class="section-title-text green-text">Get In Touch</span>
+              <div class="section-title-decoration styleOne green-border"></div>
+              <div class="section-title-decoration styleTwo green-border"></div>
+              <div class="section-title-decoration styleThree green-background green-border"></div>
+            </h1>
+            <span class="section-number green-text">03</span>
+          </div>
+
+          <div class="section-detail-wrapper green-border">
+            <h3 class="section-heading">
+              Let's Build Something Amazing Together!
+            </h3>
+            <p class="section-text">
+              I'm actively seeking entry-level Software Engineer, AI/ML Engineer, or Data Analyst roles. Available for remote opportunities and open to relocation. Let's connect and discuss how I can contribute to your team!
+            </p>
+
+            <div class="contact-form">
+              <h4 class="form-title">Send Me a Message</h4>
+              <form id="contactForm">
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="Your Name" required>
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" placeholder="Your Email" required>
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                  <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                  <i class="fas fa-comment"></i>
+                </div>
+                <button type="submit" class="submit-btn">
+                  <span>Send Message</span>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+
+            <h3 class="section-heading">Direct Contact</h3>
+            <div class="contact-links">
+              <a href="mailto:abalamaneesh@gmail.com" class="contact-link-card">
+                <i class="fas fa-envelope"></i>
+                <span>abalamaneesh@gmail.com</span>
+              </a>
+              <a href="tel:+918096275914" class="contact-link-card">
+                <i class="fas fa-phone"></i>
+                <span>+91 80962 75914</span>
+              </a>
+              <a href="https://www.linkedin.com/in/bala-maneesh-ayanala-702582266/" target="_blank" class="contact-link-card">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a href="https://abms-portfolio.netlify.app/" target="_blank" class="contact-link-card">
+                <i class="fas fa-globe"></i>
+                <span>Portfolio Website</span>
+              </a>
+            </div>
+
+            <div class="location-info">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Andhra Pradesh, India | Open to Remote & Relocation</span>
+            </div>
+
+            <div class="footer-credit">
+              <p>✨ Designed & Built by Bala Maneesh Ayanala</p>
+              <p>Inspired by <a href="https://github.com/Zivgl66/Portfolio-Room3D" target="_blank">Ziv Gliser's 3D concept</a></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
