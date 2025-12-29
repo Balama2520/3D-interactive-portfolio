@@ -97,13 +97,13 @@ ML-powered platform providing intelligent fertilizer/pesticide recommendations b
 ## 💼 Professional Experience
 
 ### 🔹 Front-End Web Development Intern
-**IBM Innovation Centre (Remote)** | Aug 2024 – Oct 2024
+**IBM Innovation Centre (Remote)** | Aug 2025 – Oct 2025
 - Built responsive React UIs with modern CSS and integrated RESTful APIs
 - Debugged frontend/backend issues in production environments
 - Collaborated in Agile/Scrum teams for feature development and testing
 
 ### 🔹 Research Assistant – AI/ML & Signal Processing
-**SRMIST, Chennai** | Jan 2024 – Jun 2024
+**SRMIST, Chennai** | Jan 2025 – Jun 2025
 - Prepared and cleaned radar/SAR datasets for deep learning models
 - Trained YOLOv8 models for target detection and classification
 - Implemented signal processing and computer vision pipelines
@@ -141,7 +141,7 @@ Signal Processing • DSP • Microcontrollers • FPGA • IoT • PCB Design
 
 ## 🎓 Education
 
-**B.Tech in Electronics and Communication Engineering** | CGPA: 7.0/10  
+**B.Tech in Electronics and Communication Engineering**  
 SRM Institute of Science and Technology, Chennai  
 *Sep 2021 – Jun 2025*
 
